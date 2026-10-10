@@ -9,7 +9,8 @@ import threading
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
     @script(
-        description="Restart the Windows Explorer process"
+        description="Restart the Windows Explorer process",
+        gesture="kb:NVDA+shift+control+r"
     )
     def script_restartExplorer(self, gesture):
         ui.message("Restarting Explorer...")

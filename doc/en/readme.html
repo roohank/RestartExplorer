@@ -7,19 +7,31 @@
 </head>
 <body>
     <h1>RestartExplorer</h1>
-    <p>An NVDA add-on that restarts the Windows Explorer process with a single command.</p>
+    <p>An NVDA add-on that restarts the Windows Explorer process with a single keyboard shortcut.</p>
 
     <h2>Features</h2>
     <ul>
-        <li>Restarts <code>explorer.exe</code> instantly with a single command.</li>
+        <li>Restarts <code>explorer.exe</code> instantly with a keyboard shortcut.</li>
         <li>Runs silently in the background without freezing NVDA.</li>
         <li>Provides audio feedback via NVDA's speech.</li>
-        <li>No default keyboard shortcut, so it never conflicts with other NVDA commands or add-ons.</li>
+        <li>Uses a conflict-free default shortcut (<code>NVDA + Shift + Control + R</code>) that can be customized by the user.</li>
+    </ul>
+
+    <h2>Keyboard Shortcut</h2>
+    <ul>
+        <li><strong>NVDA + Shift + Control + R</strong>: Restart Windows Explorer</li>
     </ul>
 
     <h2>How to Use</h2>
-    <p>This add-on does <strong>not</strong> assign a default keyboard shortcut. This is intentional, to avoid conflicts with NVDA's built-in commands (such as Remote Access) and with other add-ons.</p>
-    <p>To assign your own shortcut:</p>
+    <p>Press <strong>NVDA + Shift + Control + R</strong> at any time. NVDA will announce:</p>
+    <ul>
+        <li>"Restarting Explorer..." while the operation is in progress.</li>
+        <li>"Explorer restarted successfully." when done.</li>
+    </ul>
+    <p>If something goes wrong, NVDA will announce the error message.</p>
+
+    <h3>Changing the Shortcut</h3>
+    <p>If you prefer a different key combination:</p>
     <ol>
         <li>Open the NVDA menu (<strong>NVDA + N</strong>).</li>
         <li>Go to <strong>Preferences</strong> → <strong>Input Gestures</strong>.</li>
@@ -28,12 +40,9 @@
         <li>Click <strong>Add</strong>, press your desired key combination, and confirm.</li>
         <li>Click <strong>OK</strong>.</li>
     </ol>
-    <p>After that, pressing your chosen shortcut will restart Windows Explorer. NVDA will announce:</p>
-    <ul>
-        <li>"Restarting Explorer..." while the operation is in progress.</li>
-        <li>"Explorer restarted successfully." when done.</li>
-    </ul>
-    <p>If something goes wrong, NVDA will announce the error message.</p>
+
+    <h2>Why Use This Add-on?</h2>
+    <p>Sometimes on Windows 10 and Windows 11, Windows Explorer may hang or become unresponsive. When this happens, some keyboard shortcuts — such as <code>Win + M</code> for showing the desktop — stop working. The usual fix is to restart <code>explorer.exe</code> manually. This add-on automates that process with a single key press.</p>
 
     <h2>Requirements</h2>
     <ul>
